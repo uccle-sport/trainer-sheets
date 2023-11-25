@@ -140,22 +140,79 @@ th {
   /*Can be any text*/
   src: local("Inter-Thin"), url("/public/fonts/Inter/Inter-Thin.ttf") format("truetype");
 }
-.app {
-  width: 100vw;
-  height: 100vh;
+.calendar {
+  padding: 20px 0;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: stretch;
+  gap: 24px;
+  border-radius: 0 0 24px 24px;
+  border-right: 1px solid #9ABFE0;
+  border-bottom: 1px solid #9ABFE0;
+  border-left: 1px solid #9ABFE0;
+  background: #EEF6FE;
+  overflow: hidden;
 }
-.app * {
-  font-family: Inter400, sans-serif;
+.calendar__month {
+  width: 100%;
+  padding: 0 24px;
 }
-.app__innerContainer {
+.calendar__month__innerContainer {
+  width: 100%;
+  display: flex;
+  padding: 8px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #8DA6BF;
+  background: white;
+  box-shadow: 0 4px 0 0 rgba(210, 227, 240, 0.65);
+}
+.calendar__month__arrow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+  background: #084B83;
+  cursor: pointer;
+}
+.calendar__month__arrow:active,
+.calendar__month__arrow:hover {
+  background: #3D87C5;
+}
+.calendar__month__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.calendar__month__title__icn svg {
+  width: 16px;
+  height: 16px;
+}
+.calendar__month__title p {
+  color: #1F2C4E;
+  font-family: Inter700, sans-serif;
+  font-size: 16px;
+}
+.calendar__days {
+  display: flex;
+  width: 100%;
+}
+.calendar .swiper .transparentOverlay {
   width: 100%;
   height: 100%;
-  max-width: 745px;
-  display: flex;
-  flex-direction: column;
-  background: #FBFDFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(238, 246, 254, 0.8) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 70%, rgba(238, 246, 254, 0.8) 100%);
+  box-shadow: 0 1px 8px 0 rgba(238, 246, 254, 0.75);
 }
-/*# sourceMappingURL=App.css.map */
+.calendar .swiper .swiper-wrapper .swiper-slide {
+  width: 50px !important;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,20 +1,23 @@
 import React from 'react'
-import logo from '../logo.svg'
-import './App.css'
+import { ConfigProvider } from 'antd'
 
-function App() {
+import { Header } from './Header'
+import { Calendar } from './Calendar'
+import { TrainingsList } from './TrainingsList'
+import './App.css'
+import { ANTD_NEW_THEME } from '../helpers/antdTheme'
+
+export const App = (): JSX.Element => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider theme={ANTD_NEW_THEME}>
+      <div className="app">
+        <div className="app__innerContainer">
+          <Header />
+          <Calendar monthTitle="September" />
+          <TrainingsList />
+        </div>
+      </div>
+    </ConfigProvider>
   )
 }
 

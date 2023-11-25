@@ -1,0 +1,21 @@
+@import '../style/index';
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  * {
+    font-family: Inter400, sans-serif;
+  }
+
+  &__innerContainer{
+    width: 100%;
+    height: 100%;
+    max-width: 745px;
+    display: flex;
+    flex-direction: column;
+    background: @gray-300;
+  }
+}
