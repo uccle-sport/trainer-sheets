@@ -93,7 +93,7 @@ export const TrainingCard = ({ training }: TrainingCardProps): JSX.Element => {
         <>
           {substituteTrainerMenuIsOpen ? (
             <Form layout="vertical" className="trainingCard__substituteTrainer" form={form} onFinish={(values) => handleSubmit(values)}>
-              <Form.Item label="Choose substitute trainer:">
+              <Form.Item label="Choose a substitute trainer:">
                 <Select showSearch placeholder="Select a person" optionFilterProp="children" onSearch={onSearch} filterOption={filterOption} options={SUBSTITUTE_TRAINER} />
               </Form.Item>
 
