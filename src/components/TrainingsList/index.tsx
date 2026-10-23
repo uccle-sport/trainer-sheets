@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TrainingCard } from '../TrainingCard'
 import { TRAININGS_LIST } from '../../helpers/fakeData'
-import './index.css'
+import './index.less'
 
 export const TrainingsList = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import logo from '../../assets/images/logo.png'
-import './index.css'
+import './index.less'
 
 export const Header = (): JSX.Element => {
   return (

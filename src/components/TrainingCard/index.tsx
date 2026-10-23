@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Icon from '@ant-design/icons'
 import { Select, Button, Form, ConfigProvider } from 'antd'
 
-import './index.css'
+import './index.less'
 import { cancelIcn, confirmedIcn, faceIcn, pitchIcn, teamIcn, reassignIcn } from '../../assets/CustomIcons'
 import { SUBSTITUTE_TRAINER } from '../../helpers/fakeData'
 
