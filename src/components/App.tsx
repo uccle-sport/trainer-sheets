@@ -4,7 +4,7 @@ import { ConfigProvider } from 'antd'
 import { Header } from './Header'
 import { Calendar } from './Calendar'
 import { TrainingsList } from './TrainingsList'
-import './App.css'
+import './App.less'
 import { ANTD_NEW_THEME } from '../helpers/antdTheme'
 
 export const App = (): JSX.Element => {
@@ -13,7 +13,7 @@ export const App = (): JSX.Element => {
       <div className="app">
         <div className="app__innerContainer">
           <Header />
-          <Calendar monthTitle="September" />
+          <Calendar />
           <TrainingsList />
         </div>
       </div>

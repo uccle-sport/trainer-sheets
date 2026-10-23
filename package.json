@@ -2,74 +2,41 @@
   "name": "trainer-sheets",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "antd": "^5.10.2",
+    "dayjs": "^1.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.3",
     "react-router-dom": "^6.17.0",
-    "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "swiper": "^11.0.3",
-    "uuid": "^9.0.1",
-    "web-vitals": "^2.1.4"
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.59",
     "@types/react": "^18.2.30",
     "@types/react-dom": "^18.2.14",
     "@types/uuid": "^9.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0",
-    "concurrently": "^8.2.2",
-    "eslint": "^8.13.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-flowtype": "^3.13.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsdoc": "^38.1.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
+    "@vitejs/plugin-react": "^6.0.0",
     "less": "^4.1.2",
-    "less-watch-compiler": "^1.16.3",
     "lint-staged": "^12.3.7",
+    "oxlint": "^1.89.0",
     "prettier": "^2.6.1",
     "pretty-quick": "^3.1.3",
-    "typescript": "^4.9.5"
-  },
-  "scripts": {
-    "start": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\" \"react-scripts start\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "typescript": "^7.0.2",
+    "vite": "^8.0.0"
   },
   "main": "index.js",
   "author": "Larysa Shashuk <larisa.shashuk@gmail.com>",
-  "license": "MIT",
-  "packageManager": "yarn@3.6.4"
+  "license": "MIT"
 }
